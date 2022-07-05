@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Network version="10" nodeCount="10" linkCount="4" variableCount="10">
+  <Nodes count="10">
+    <Node id="0" in="0" out="0" variableCount="1" name="GPT Revenue" x="189.90199279785156" y="38.901641845703125" width="30" height="30">
+      <CustomProperties>
+        <CustomProperty name="A7732CF7-854B-4136-87D6-74BEB328533C" />
+        <CustomProperty name="2A208359-E2CF-4E02-9712-45B07F2E0B2A" value="compact" />
+        <CustomProperty name="EDAA84EF-CCDC-4203-9F40-31FF3D4BD16E" value="70" />
+        <CustomProperty name="20C3C967-AF54-4EFD-848D-71491695356E" value="199.48590087890625" />
+      </CustomProperties>
+      <NodeDistributionOptions />
+      <Variable id="0" name="GPT Revenue" valueType="discrete" stateValueType="boolean" states="2">
+        <States count="2">
+          <State name="State1">
+            <Value>false</Value>
+          </State>
+          <State name="State2">
+            <Value>true</Value>
+          </State>
+        </States>
+      </Variable>
+    </Node>
+    <Node id="1" in="0" out="0" variableCount="1" name="Most Parameters" x="379.63917541503906" y="106.21818542480469" width="30" height="30">
+      <CustomProperties>
+        <CustomProperty name="A7732CF7-854B-4136-87D6-74BEB328533C" />
+        <CustomProperty name="2A208359-E2CF-4E02-9712-45B07F2E0B2A" value="compact" />
+        <CustomProperty name="EDAA84EF-CCDC-4203-9F40-31FF3D4BD16E" value="109.39523315429688" />
+        <CustomProperty name="20C3C967-AF54-4EFD-848D-71491695356E" value="531.4830017089844" />
+      </CustomProperties>
+      <NodeDistributionOptions />
+      <Variable id="1" name="Most Parameters" valueType="discrete" stateValueType="doubleInterval" states="4">
+        <States count="4">
+          <State name="State1– &lt;10e9" description="10e9">
+            <Value>
+              <Interval min="0" max="10000000000" minEndPoint="closed" maxEndPoint="open" />
+            </Value>
+          </State>
+          <State name="State2– 10e9-10e10" description="10e9-10e10">
+            <Value>
+              <Interval min="10000000000" max="100000000000" minEndPoint="closed" maxEndPoint="open" />
+            </Value>
+          </State>
+          <State name="State3– 10e10-10e11" description="10e10-10e11">
+            <Value>
+              <Interval min="100000000000" max="1000000000000" minEndPoint="closed" maxEndPoint="open" />
+            </Value>
+          </State>
+          <State name="State4– 10e11+" description="10e11+">
+            <Value>
+              <Interval min="1000000000000" max="INF" minEndPoint="closed" maxEndPoint="closed" />
+            </Value>
+          </State>
+        </States>
+      </Variable>
+    </Node>
+    <Node id="2" in="0" out="0" variableCount="1" name="US GDP from software" description="% of GDP" x="91.70162963867188" y="43.33648681640625" width="30" height="30">
+      <CustomProperties>
+        <CustomProperty name="2A208359-E2CF-4E02-9712-45B07F2E0B2A" value="compact" />
+        <CustomProperty name="EDAA84EF-CCDC-4203-9F40-31FF3D4BD16E" value="124" />
+        <CustomProperty name="20C3C967-AF54-4EFD-848D-71491695356E" value="298.68536376953125" />
+      </CustomProperties>
+      <NodeDistributionOptions />
+      <Variable id="2" name="US GDP (software)" valueType="discrete" stateValueType="doubleInterval" states="3">
+        <States count="3">
+          <State name="State1 0-4%">
+            <Value>
+              <Interval min="0" max="4" minEndPoint="closed" maxEndPoint="open" />
+            </Value>
+          </State>
+          <State name="State2 4-7%">
+            <Value>
+              <Interval min="4" max="7" minEndPoint="closed" maxEndPoint="open" />
+            </Value>
+          </State>
+          <State name="State3 7%+">
+            <Value>
+              <Interval min="7" max="INF" minEndPoint="closed" maxEndPoint="closed" />
+            </Value>
+          </State>
+        </States>
+      </Variable>
+    </Node>
+    <Node id="3" in="4" out="0" variableCount="1" name="AI catastrophe 2030" x="211.43792724609375" y="367.4625244140625" width="203.90036010742188" height="70">
+      <CustomProperties>
+        <CustomProperty name="2A208359-E2CF-4E02-9712-45B07F2E0B2A" value="query" />
+        <CustomProperty name="EDAA84EF-CCDC-4203-9F40-31FF3D4BD16E" value="70" />
+        <CustomProperty name="20C3C967-AF54-4EFD-848D-71491695356E" value="203.90036010742188" />
+      </CustomProperties>
+      <NodeDistributionOptions />
+      <Variable id="3" name="AI catastrophe 2030" valueType="discrete" stateValueType="boolean" states="2">
+        <CustomProperties>
+          <CustomProperty name="2241DECF-B19B-4B55-8634-EDC07F1F64EC" value="clustered-column" />
+        </CustomProperties>
+        <States count="2">
+          <State name="State1-False">
+            <Value>false</Value>
+          </State>
+          <State name="State2-True">
+            <Value>true</Value>
+          </State>
+        </States>
+      </Variable>
+    </Node>
+    <Node id="4" in="0" out="1" variableCount="1" name="MATH dataset" x="595.4267425537109" y="249.60311889648438" width="287.0709228515625" height="124">
+      <CustomProperties>
+        <CustomProperty name="2A208359-E2CF-4E02-9712-45B07F2E0B2A" value="query" />
+        <CustomProperty name="EDAA84EF-CCDC-4203-9F40-31FF3D4BD16E" value="124" />
+        <CustomProperty name="20C3C967-AF54-4EFD-848D-71491695356E" value="287.0709228515625" />
+      </CustomProperties>
+      <NodeDistributionOptions />
+      <Variable id="4" name="MATH dataset" valueType="discrete" stateValueType="doubleInterval" states="3">
+        <States count="3">
+          <State name="State1">
+            <Value>
+              <Interval min="-INF" max="90" minEndPoint="closed" maxEndPoint="open" />
+            </Value>
+          </State>
+          <State name="State2">
+            <Value>
+              <Interval min="90" max="95" minEndPoint="closed" maxEndPoint="open" />
+            </Value>
+          </State>
+          <State name="State3">
+            <Value>
+              <Interval min="95" max="100" minEndPoint="closed" maxEndPoint="open" />
+            </Value>
+          </State>
+        </States>
+      </Variable>
+    </Node>
+    <Node id="5" in="0" out="0" variableCount="1" name="Max $ compute" x="627.4064025878906" y="191.38345336914062" width="30" height="30">
+      <CustomProperties>
+        <CustomProperty name="A7732CF7-854B-4136-87D6-74BEB328533C" />
+        <CustomProperty name="2A208359-E2CF-4E02-9712-45B07F2E0B2A" value="compact" />
+        <CustomProperty name="EDAA84EF-CCDC-4203-9F40-31FF3D4BD16E" value="124" />
+        <CustomProperty name="20C3C967-AF54-4EFD-848D-71491695356E" value="373.2681579589844" />
+      </CustomProperties>
+      <NodeDistributionOptions />
+      <Variable id="5" name="Max $ compute" description="Ignored because equivalent to max compute" valueType="discrete" stateValueType="doubleInterval" states="3">
+        <States count="3">
+          <State name="State1">
+            <Value>
+              <Interval min="0" max="12000000" minEndPoint="closed" maxEndPoint="open" />
+            </Value>
+          </State>
+          <State name="State2">
+            <Value>
+              <Interval min="12000000" max="120000000" minEndPoint="closed" maxEndPoint="open" />
+            </Value>
+          </State>
+          <State name="State3">
+            <Value>
+              <Interval min="120000000" max="INF" minEndPoint="closed" maxEndPoint="closed" />
+            </Value>
+          </State>
+        </States>
+      </Variable>
+    </Node>
+    <Node id="6" in="0" out="0" variableCount="1" name="QuALITY dataset" x="51.51544189453125" y="267.92791748046875" width="30" height="30">
+      <CustomProperties>
+        <CustomProperty name="A7732CF7-854B-4136-87D6-74BEB328533C" />
+        <CustomProperty name="2A208359-E2CF-4E02-9712-45B07F2E0B2A" value="compact" />
+        <CustomProperty name="EDAA84EF-CCDC-4203-9F40-31FF3D4BD16E" value="124" />
+        <CustomProperty name="20C3C967-AF54-4EFD-848D-71491695356E" value="299.0954284667969" />
+      </CustomProperties>
+      <NodeDistributionOptions />
+      <Variable id="6" name="QuALITY dataset" valueType="discrete" stateValueType="doubleInterval" states="3">
+        <States count="3">
+          <State name="State1">
+            <Value>
+              <Interval min="0" max="85.4" minEndPoint="closed" maxEndPoint="closed" />
+            </Value>
+          </State>
+          <State name="State2">
+            <Value>
+              <Interval min="85.4" max="93.5" minEndPoint="open" maxEndPoint="closed" />
+            </Value>
+          </State>
+          <State name="State3">
+            <Value>
+              <Interval min="93.5" max="100" minEndPoint="open" maxEndPoint="open" />
+            </Value>
+          </State>
+        </States>
+      </Variable>
+    </Node>
+    <Node id="7" in="0" out="1" variableCount="1" name="US CPU R&amp;D spend" description="In millions of dollars" x="39.34169006347656" y="128.5675048828125" width="253.08160400390625" height="124.11758422851562">
+      <CustomProperties>
+        <CustomProperty name="2A208359-E2CF-4E02-9712-45B07F2E0B2A" value="query" />
+        <CustomProperty name="EDAA84EF-CCDC-4203-9F40-31FF3D4BD16E" value="124" />
+        <CustomProperty name="20C3C967-AF54-4EFD-848D-71491695356E" value="265.8789367675781" />
+      </CustomProperties>
+      <NodeDistributionOptions />
+      <Variable id="7" name="US CPU R&amp;D spend" valueType="discrete" stateValueType="doubleInterval" states="3">
+        <States count="3">
+          <State name="State1">
+            <Value>
+              <Interval min="0" max="250" minEndPoint="closed" maxEndPoint="closed" />
+            </Value>
+          </State>
+          <State name="State2">
+            <Value>
+              <Interval min="250" max="350" minEndPoint="open" maxEndPoint="closed" />
+            </Value>
+          </State>
+          <State name="State3">
+            <Value>
+              <Interval min="350" max="INF" minEndPoint="open" maxEndPoint="closed" />
+            </Value>
+          </State>
+        </States>
+      </Variable>
+    </Node>
+    <Node id="8" in="0" out="1" variableCount="1" name="MMLU2" x="299.4495849609375" y="157.7110595703125" width="283.3496398925781" height="124">
+      <CustomProperties>
+        <CustomProperty name="2A208359-E2CF-4E02-9712-45B07F2E0B2A" value="query" />
+        <CustomProperty name="EDAA84EF-CCDC-4203-9F40-31FF3D4BD16E" value="124" />
+        <CustomProperty name="20C3C967-AF54-4EFD-848D-71491695356E" value="283.3496398925781" />
+      </CustomProperties>
+      <NodeDistributionOptions />
+      <Variable id="8" name="MMLU2" valueType="discrete" stateValueType="doubleInterval" states="3">
+        <States count="3">
+          <State name="State1">
+            <Value>
+              <Interval min="0" max="87.8" minEndPoint="closed" maxEndPoint="closed" />
+            </Value>
+          </State>
+          <State name="State2">
+            <Value>
+              <Interval min="87.8" max="91.8" minEndPoint="open" maxEndPoint="open" />
+            </Value>
+          </State>
+          <State name="State3">
+            <Value>
+              <Interval min="91.8" max="INF" minEndPoint="closed" maxEndPoint="open" />
+            </Value>
+          </State>
+        </States>
+      </Variable>
+    </Node>
+    <Node id="9" in="0" out="1" variableCount="1" name="Max compute" x="486.9201202392578" y="27.3514404296875" width="318.988037109375" height="124">
+      <CustomProperties>
+        <CustomProperty name="2A208359-E2CF-4E02-9712-45B07F2E0B2A" value="query" />
+        <CustomProperty name="EDAA84EF-CCDC-4203-9F40-31FF3D4BD16E" value="124" />
+        <CustomProperty name="20C3C967-AF54-4EFD-848D-71491695356E" value="318.988037109375" />
+      </CustomProperties>
+      <NodeDistributionOptions />
+      <Variable id="9" name="Max compute" valueType="discrete" stateValueType="doubleInterval" states="3">
+        <CustomProperties>
+          <CustomProperty name="2241DECF-B19B-4B55-8634-EDC07F1F64EC" value="none" />
+        </CustomProperties>
+        <States count="3">
+          <State name="State1">
+            <Value>
+              <Interval min="0" max="1000" minEndPoint="closed" maxEndPoint="closed" />
+            </Value>
+          </State>
+          <State name="State2">
+            <Value>
+              <Interval min="1000" max="10000" minEndPoint="open" maxEndPoint="closed" />
+            </Value>
+          </State>
+          <State name="State3">
+            <Value>
+              <Interval min="10000" max="INF" minEndPoint="open" maxEndPoint="closed" />
+            </Value>
+          </State>
+        </States>
+      </Variable>
+    </Node>
+  </Nodes>
+  <Links count="4">
+    <Link id="0" from="4" to="3" />
+    <Link id="1" from="7" to="3" />
+    <Link id="2" from="8" to="3" />
+    <Link id="3" from="9" to="3" />
+  </Links>
+  <Distributions>
+    <Distribution nodeId="0" type="table">
+      <SortedVariables>
+        <VariableContext variableId="0" headTail="head" />
+      </SortedVariables>
+      <Table count="2">0.5 0.5</Table>
+    </Distribution>
+    <Distribution nodeId="1" type="table">
+      <SortedVariables>
+        <VariableContext variableId="1" headTail="head" />
+      </SortedVariables>
+      <Table count="4">0.25 0.25 0.25 0.25</Table>
+    </Distribution>
+    <Distribution nodeId="2" type="table">
+      <SortedVariables>
+        <VariableContext variableId="2" headTail="head" />
+      </SortedVariables>
+      <Table count="3">0.1 0.8 0.1</Table>
+    </Distribution>
+    <Distribution nodeId="3" type="table">
+      <SortedVariables>
+        <VariableContext variableId="3" headTail="head" />
+        <VariableContext variableId="4" headTail="tail" />
+        <VariableContext variableId="7" headTail="tail" />
+        <VariableContext variableId="8" headTail="tail" />
+        <VariableContext variableId="9" headTail="tail" />
+      </SortedVariables>
+      <Table count="162">0.99 0.98 0.97 0.98 0.96 0.94 0.97 0.94 0.91 0.98 0.97 0.96 0.97 0.95 0.93 0.96 0.93 0.9 0.95 0.93 0.91 0.93 0.9 0.87 0.89 0.85 0.82 0.98 0.97 0.96 0.97 0.95 0.93 0.96 0.93 0.9 0.97 0.96 0.95 0.96 0.94 0.92 0.95 0.92 0.89 0.93 0.91 0.89 0.91 0.88 0.85 0.87 0.83 0.79 0.95 0.93 0.91 0.93 0.91 0.89 0.92 0.89 0.86 0.94 0.92 0.9 0.92 0.9 0.88 0.89 0.86 0.83 0.93 0.91 0.89 0.91 0.89 0.87 0.85 0.81 0.77 0.01 0.02 0.03 0.02 0.04 0.06 0.03 0.06 0.09 0.02 0.03 0.04 0.03 0.05 0.07 0.04 0.07 0.1 0.05 0.07 0.09 0.07 0.1 0.13 0.11 0.15 0.18 0.02 0.03 0.04 0.03 0.05 0.07 0.04 0.07 0.1 0.03 0.04 0.05 0.04 0.06 0.08 0.05 0.08 0.11 0.07 0.09 0.11 0.09 0.12 0.15 0.13 0.17 0.21 0.05 0.07 0.09 0.07 0.09 0.11 0.08 0.11 0.14 0.06 0.08 0.1 0.08 0.1 0.12 0.11 0.14 0.17 0.07 0.09 0.11 0.09 0.11 0.13 0.15 0.19 0.23</Table>
+    </Distribution>
+    <Distribution nodeId="4" type="table">
+      <SortedVariables>
+        <VariableContext variableId="4" headTail="head" />
+      </SortedVariables>
+      <Table count="3">0.05 0.45 0.5</Table>
+    </Distribution>
+    <Distribution nodeId="5" type="table">
+      <SortedVariables>
+        <VariableContext variableId="5" headTail="head" />
+      </SortedVariables>
+      <Table count="3">0.3333333333333333 0.3333333333333333 0.3333333333333333</Table>
+    </Distribution>
+    <Distribution nodeId="6" type="table">
+      <SortedVariables>
+        <VariableContext variableId="6" headTail="head" />
+      </SortedVariables>
+      <Table count="3">0.3333333333333333 0.3333333333333333 0.3333333333333333</Table>
+    </Distribution>
+    <Distribution nodeId="7" type="table">
+      <SortedVariables>
+        <VariableContext variableId="7" headTail="head" />
+      </SortedVariables>
+      <Table count="3">0.3 0.515 0.185</Table>
+    </Distribution>
+    <Distribution nodeId="8" type="table">
+      <SortedVariables>
+        <VariableContext variableId="8" headTail="head" />
+      </SortedVariables>
+      <Table count="3">0.085 0.4575 0.4575</Table>
+    </Distribution>
+    <Distribution nodeId="9" type="table">
+      <SortedVariables>
+        <VariableContext variableId="9" headTail="head" />
+      </SortedVariables>
+      <Table count="3">0.05 0.35 0.6</Table>
+    </Distribution>
+  </Distributions>
+  <QueryExpressions />
+</Network>
